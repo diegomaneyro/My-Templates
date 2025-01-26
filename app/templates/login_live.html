@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Live</title>
+    <link 
+    rel="stylesheet"
+    type="text/css" 
+    href="{{ url_for('static', filename='css/style_live.css') }}" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h2>Login</h2>
+      <form id="forma" name="forma" method="POST">
+        <div class="elemento">
+          <label for="usuario">User</label>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            required="true"
+            placeholder="Usuario"
+          />
+        </div>
+        <div class="elemento">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required="true"
+            placeholder="Contraseña"
+          />
+        </div>
+        <div class="elemento">
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
+    <footer>
+      &copy; 2024 Diego Maneyro. Todos los derechos reservados. |
+      <a href="mailto:diegomaneyro@gmail.com">Contacto</a> |
+      <a href="/terminos-y-condiciones">Términos y Condiciones</a> |
+      <a href="/politica-de-privacidad">Política de Privacidad</a>
+    </footer>
+  </body>
+</html>

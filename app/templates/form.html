@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link
+    type="text/css" 
+    href="{{ url_for('static', filename='css/style_form.css') }}" 
+    rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Registro de Usuario</h1>
+    <div id="form">
+      <form method="post" action="mi_servidor" autocomplete="off">
+        <div class="form-group">
+          <label for="tipo-usuario">Tipo Usuario</label>
+          <input style="border:1px solid #424837; border-radius: 2px;" id="usuario" name="tipo-usuario" readonly="true" value="Revendedor" disabled="true"/>
+        </div>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            placeholder="Ingrese su Nombre"
+          />
+        </div>
+        <div class="form-group">
+          <label for="apellido">Apellido</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            required
+            placeholder="Ingrese su Apellido"
+          />        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Ingrese su Email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="Ingrese su Teléfono"
+          />
+        </div>
+        <div class="form-group">
+          <label for="ciudad">Ciudad</label>
+          <input
+            type="text"
+            id="ciudad"
+            name="ciudad"
+            placeholder="Ingrese su Ciudad"
+          />
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="3"
+            cols="30"
+            placeholder="Ingrese un mensaje"
+          >Mi mensaje es:</textarea>
+        </div>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Restablecer"/>
+      </form>
+    </div>
+  </body>
+</html>
