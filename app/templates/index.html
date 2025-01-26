@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
   </head>
+  <link rel="stylesheet" href="../static/css/style_index.css" />
   <body>
     <header>
-      <h1>Coleccion de Componentes</h1>
-      <h3>Templates creados para mis app</h3>
+      <h1>Colección de Componentes</h1>
+    </header>
+    <div class="contenedor">
       <nav>
         <a href="{{ url_for('login_crypto') }}"> Ir a Login Crypto </a>
         <a href="{{ url_for('login_future') }}"> Ir a Login Future </a>
         <a href="{{ url_for('login_live') }}"> Ir a login Live</a>
         <a href="{{ url_for('form') }}">Ir a Formulario</a>
       </nav>
-    </header>
+    </div>
+    <h3>Templates creados para mis app</h3>
     <div>
       <p>En los menu de opciones pueden visualizar los diferentes componenes</p>
     </div>

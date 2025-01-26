@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    #eb4f54,
+    #ee967e
+  ); /* Degradado pastel */
+}
+
+header {
+  background-color: #9c7cd6; /* Color pastel */
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+h1 {
+  text-align: center;
+  color: #f8f9fa; /* Color claro */
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #a71111; /* Color pastel */
+  color: #ffffff; /* Color claro */
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: rgba(255, 0, 0, 0.733); /* Color pastel más claro */
+}
