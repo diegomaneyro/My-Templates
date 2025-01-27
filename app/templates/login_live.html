@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Live</title>
-    <link 
-    rel="stylesheet"
-    type="text/css" 
-    href="{{ url_for('static', filename='css/style_live.css') }}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style_live.css') }}"
+    />
   </head>
   <body>
+    <div class="div-inicio">
+      <a class="a-inicio" href="{{ url_for('inicio') }}">Inicio</a>
+    </div>
     <div class="contenedor">
       <h2>Login</h2>
       <form id="forma" name="forma" method="POST">
